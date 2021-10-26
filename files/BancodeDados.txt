@@ -1,0 +1,19 @@
+nome
+email
+telefone (whatsapp)
+escolhar da consulta
+	-Fazer um checklist com as 	especialidades
+	(clinico geral, dentista 	cirurgião...)
+checklist com as datas disponíveis e horários
+CPF
+plano de saúde ou particular
+
+ao final, antes de a pessoa cadastrar
+precisa fazer um "count" de id's
+para colocar um limite de vagas no dia
+
+
+obs: posso fazer um limite de vagas - a pessoa escolhe o dia e hora, e faz uma soma de quantos foram cadastrados no dia 
+exemplo
+	se a pessoa escolhe segunda
+	somamos quantos vão na segunda e colocamos um limite e assim vai

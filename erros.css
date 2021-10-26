@@ -1,0 +1,15 @@
+/*TRATAMENTO DO ERRO DE CAMPOS VAZIOS*/
+.vazio{
+    color: rgb(211, 85, 85);
+    font-size: 30px;
+}
+.vazio_p{   
+    margin-top: 10px;
+    background-color: rgb(216, 216, 216);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px ;
+}
+/*Confirmar a consulta*/

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dentista</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <nav>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Agendamento</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <section class = "body">
+            <div class="forms">
+                <form action="" method="POST">
+                    <h3>Cadastro para Consulta</h3>
+                    <input id = "color" type="text" name="email" placeholder="Seu e-mail">
+                    <input id = "nome" type="password" name="nome" placeholder="Seu nome">
+
+                    <input id = "telefone" type="text" name="telefone" placeholder="Seu telefone para contato">
+                    <input id = "cpf" type="text" name="cpf" placeholder="Seu CPF">
+                    <!--Checklist-->
+
+                    <label for="datas" id = "datas__label">Escolha o dia da consulta</label>
+                    <select name="datas" id="datas">
+                        <option value="seg">Segunda - Manhã (8h até 11:30h) | Tarde (13h até 15h)</option>
+                        <option value="ter">Terça - Manhã (8h até 11:30h) | Tarde (13h até 15h)</option>
+                        <option value="qua">Quarta - Manhã (8h até 11:30h) | Tarde (13h até 15h)</option>
+                        <option value="qui">Quinta - Manhã (8h até 11:30h) | Tarde (13h até 15h)</option>
+                        <option value="sex">Sexta - Manhã (8h até 11:30h) | Tarde (13h até 15h)</option>
+
+                    </select>
+
+                    <label for="planos" id = "planos__label">Escolha o plano de saúde</label>
+                    <select name="planos" id="planos">
+                        <option value="unimed">Unimed</option>
+                        <option value="america">Sul America</option>
+                        <option value="inter">Intermédica</option>
+                        <option value="porto">Porto Seguro</option>
+                        <option value="banco">Seguro de banco</option>
+                        <option value="outros">Outros</option>
+
+                    </select>
+                    <label for="consulta" id = "medicos">Escolha a especialidade</label>
+
+                    <select name="consulta" id="consulta">
+                        <option value="cir">Cirurgião dentista</option>
+                        <option value="geral" selected>Clinico Geral</option>
+                        <option value="odonto">Odontopediatria</option>
+                        <option value="ortodon">Ortodontista</option>
+                        <option value="geriatria">Odontogeriatria</option>
+                        <option value="endo">Endodontista</option>
+
+                        <option value="perio">Periodontista</option>
+                        <option value="impla">Implantodontista</option>
+                        <option value="odontoEspe">Odontologia do esporte</option>
+                        <option value="odontoEst">Odontologia estética</option>
+
+                    </select>
+                    
+
+                    <input type="submit" name="acao" value="Enviar">
+                </form>
+                <script>
+                    var color = document.getElementById('color');
+                    var nome = document.getElementById('nome');
+                    var telefone = document.getElementById('telefone');
+                    var cpf = document.getElementById('cpf');
+
+                    function cores(listener){
+                            listener.addEventListener('focus', ()=>{
+                                listener.style.borderColor = "rgb(133, 223, 173)";
+                            });
+                            listener.addEventListener('blur', ()=>{
+                                listener.style.borderColor = "rgb(0,0,0)";
+                            });
+                    }
+                    cores(color)
+                    cores(nome)
+                    cores(telefone)
+                    cores(cpf)
+                </script>
+            </div>
+        </section>
+        <footer>
+            <p>Consultório dentário</p>
+            <p>Todos os direitos reservados 2021</p>
+        </footer>
+    </div>
+</body>
+<!--FORMS - Para limitar o número de pessoas trabalha com ID - comparar com determinado valor-->
+</html>
